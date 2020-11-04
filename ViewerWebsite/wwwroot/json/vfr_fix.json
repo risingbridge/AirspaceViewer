@@ -1,3 +1,181 @@
-{
-
+﻿{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.743611", "63.703888" ]
+			},
+			"properties": {
+				"Name": "Austrått",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.866112", "63.78361" ]
+			},
+			"properties": {
+				"Name": "Ekset",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.142222", "63.649723" ]
+			},
+			"properties": {
+				"Name": "Fjellværøy",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.520278", "63.645" ]
+			},
+			"properties": {
+				"Name": "Garten",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.826667", "63.633053" ]
+			},
+			"properties": {
+				"Name": "Hasselvika",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.374445", "63.58611" ]
+			},
+			"properties": {
+				"Name": "Leksan",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.826667", "63.503613" ]
+			},
+			"properties": {
+				"Name": "Lensvik",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.558611", "63.768055" ]
+			},
+			"properties": {
+				"Name": "Nes",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.718888", "63.614998" ]
+			},
+			"properties": {
+				"Name": "Selva",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.921667", "63.521667" ]
+			},
+			"properties": {
+				"Name": "Stadsbygd",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.231944", "63.555832" ]
+			},
+			"properties": {
+				"Name": "Stora",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.415", "63.69139" ]
+			},
+			"properties": {
+				"Name": "Storfosna",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "10.229444", "63.621666" ]
+			},
+			"properties": {
+				"Name": "Storovatn",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.425556", "63.825275" ]
+			},
+			"properties": {
+				"Name": "Tarva",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "8.684722", "63.412224" ]
+			},
+			"properties": {
+				"Name": "Tjeldbergodden",
+				"Type": "VFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ "9.712222", "63.858055" ]
+			},
+			"properties": {
+				"Name": "Valsøy",
+				"Type": "VFR"
+			}
+		}
+	]
 }

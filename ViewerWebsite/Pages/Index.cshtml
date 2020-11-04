@@ -1,10 +1,109 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+	ViewData["Title"] = "MapView";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div id='map' style='width: 100%; height: 100%;'></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiaHJpc2Vicm8iLCJhIjoiY2puM2Y3a3U0MmJkZzNxbzExdWxoY2Y1aiJ9.54wOMVTEtmUpzvOCxO80OA';
+	var map = new mapboxgl.Map({
+	container: 'map',
+	style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
+	center: [009.60277, 63.7], // starting position [lng, lat]
+	zoom: 9 // starting zoom
+	});
+
+	map.on('load', function () {
+		// Add an image to use as a custom marker
+		map.loadImage(
+			'./img/vfr_fix.png',
+			function (error, image) {
+				if (error) throw error;
+				map.addImage('vfrMarker', image);
+				// Add a GeoJSON source with 2 points
+				map.addSource('vfrpoints', {
+					type: 'geojson',
+					data: './json/vfr_fix.json',
+					cluster: false,
+				});
+
+				// Add a symbol layer
+				map.addLayer({
+					'id': 'vfrpoints',
+					'type': 'symbol',
+					'source': 'vfrpoints',
+					'layout': {
+						'icon-allow-overlap': true,
+						'text-allow-overlap': true,
+						'icon-image': 'vfrMarker',
+					}
+				});
+			}
+		);
+
+		map.loadImage(
+			'./img/ifr_fix.png',
+			function (error, image) {
+				if (error) throw error;
+				map.addImage('ifrMarker', image);
+				// Add a GeoJSON source with 2 points
+				map.addSource('ifrpoints', {
+					type: 'geojson',
+					data: './json/ifr_fix.json',
+					cluster: false,
+				});
+
+				// Add a symbol layer
+				map.addLayer({
+					'id': 'ifrpoints',
+					'type': 'symbol',
+					'source': 'ifrpoints',
+					'layout': {
+						'icon-allow-overlap': true,
+						'text-allow-overlap': true,
+						'icon-image': 'ifrMarker',
+					}
+				});
+			}
+		);
+
+
+		var popup = new mapboxgl.Popup({
+			closeButton: false,
+			closeOnClick: false
+		})
+		map.on('mouseenter', 'vfrpoints', function (e) {
+			// Change the cursor style as a UI indicator.
+			map.getCanvas().style.cursor = 'pointer';
+
+			// Populate the popup and set its coordinates
+			// based on the feature found.
+			popup.setLngLat(e.features[0].geometry.coordinates)
+				.setHTML(e.features[0].properties.Name)
+				.addTo(map);
+		});
+
+		map.on('mouseleave', 'vfrpoints', function () {
+			map.getCanvas().style.cursor = '';
+			popup.remove();
+		});
+
+		map.on('mouseenter', 'ifrpoints', function (e) {
+			// Change the cursor style as a UI indicator.
+			map.getCanvas().style.cursor = 'pointer';
+
+			// Populate the popup and set its coordinates
+			// based on the feature found.
+			popup.setLngLat(e.features[0].geometry.coordinates)
+				.setHTML(e.features[0].properties.Name)
+				.addTo(map);
+		});
+
+		map.on('mouseleave', 'ifrpoints', function () {
+			map.getCanvas().style.cursor = '';
+			popup.remove();
+		});
+	});
+
+</script>

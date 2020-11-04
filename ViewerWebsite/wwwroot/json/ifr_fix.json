@@ -1,0 +1,187 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.2074995",
+					"63.403614"
+				]
+			},
+			"properties": {
+				"Name": "UVEPI",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"10.703611",
+					"62.8325"
+				]
+			},
+			"properties": {
+				"Name": "UTUNA",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.825277",
+					"63.495556"
+				]
+			},
+			"properties": {
+				"Name": "ROBMI",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"10.739167",
+					"64.29833"
+				]
+			},
+			"properties": {
+				"Name": "EKRUX",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.563611",
+					"63.905556"
+				]
+			},
+			"properties": {
+				"Name": "SUKES",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.448611",
+					"63.83972"
+				]
+			},
+			"properties": {
+				"Name": "GOKTA",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.279722",
+					"63.803055"
+				]
+			},
+			"properties": {
+				"Name": "VAVON",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.9788885",
+					"63.544724"
+				]
+			},
+			"properties": {
+				"Name": "DILRU",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.811389",
+					"63.50861"
+				]
+			},
+			"properties": {
+				"Name": "UTPIP",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.668889",
+					"63.443058"
+				]
+			},
+			"properties": {
+				"Name": "NAXUT",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"10.4163885",
+					"64.38028"
+				]
+			},
+			"properties": {
+				"Name": "GEPLO",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.630834",
+					"63.108887"
+				]
+			},
+			"properties": {
+				"Name": "NELSU",
+				"Type": "IFR"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					"9.996667",
+					"63.75028"
+				]
+			},
+			"properties": {
+				"Name": "EMPES",
+				"Type": "IFR"
+			}
+		}
+	]
+}
