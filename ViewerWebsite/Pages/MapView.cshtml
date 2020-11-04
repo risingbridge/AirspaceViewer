@@ -1,0 +1,20 @@
+﻿@page
+@model ViewerWebsite.Pages.MapViewModel
+@{
+	ViewData["Title"] = "MapViewer";
+}
+
+<div class="text-center">
+	<h1 class="display-4">MapView</h1>
+</div>
+
+<div id='map' style='width: 100%; height: 800px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiaHJpc2Vicm8iLCJhIjoiY2puM2Y3a3U0MmJkZzNxbzExdWxoY2Y1aiJ9.54wOMVTEtmUpzvOCxO80OA';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11', // stylesheet location
+center: [009.60277, 63.7], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+</script>
